@@ -11,14 +11,18 @@
   }
   if (document.getElementsById('input1a').checkValidity()) {
     if(email1 === email2){
-
-    }
-    function getError(){
- if(password1 != password2) return "password do not match";
- if(email1 != email2) return "emails do not match";
- return false;
-}
+      if(password1 === password2) {
+        return true;
   }
+  }
+ 
+function getError(){
+ if (password1 != password2){
+   return "password do not match";
+ if(email1 != email2) {
+   return "emails do not match";
+}
+}
   </script>
 <h1>REGISTRATION FORM </h1>
 <form name="newuser">

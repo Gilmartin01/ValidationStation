@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+  function validationForm(){
+    var email1 = document.getElementsById('input1a').value;
+    var email2 = document.getElementsById('input1b').value;
+    var password1 = document.getElementsById('input2a').value;
+    var password2 = document.getElementsById('input2b').value;
+  }
+  if (document.getElementsById('input1a').checkValidity()) {
+    if(email1 === email2){
+
+    }
+    function getError(){
+ if(password1 != password2) return "password do not match";
+ if(email1 != email2) return "emails do not match";
+ return false;
+}
+  }
+  </script>
+<h1>REGISTRATION FORM </h1>
+<form name="newuser">
+  <p> Email Address: <input id="input1a" type="text" name="email"  placeholder= "Enter an Email Address" required></p>
+  <p>Confirm Email: <input id="input1b" type="text" name="confirmEmail" placeholder="Confirm Email Address" required></p>
+  <p> Password: <input input="input2a" type="password" name="password" placeholder="Enter a Password" required></p>
+  <p>Confirm Password: <input id="input2b" type="password" name="confirmPassword" placeholder="Confirm Password" required ></p>
+    <!--create function to compare Password===Confirm Password-->
+    <p><input type="submit" value="Submit" name="Submit"> </p>
+</form>
+</body>
+</html>
